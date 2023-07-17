@@ -3,3 +3,11 @@
 ## Task 1
 
 Sa se creeze un repo nou cu numele angular-tasks. Adaugati un proiect angular in care se afiseze pe localhost:4200 un buton cu numele SALUT.
+
+## Task 2
+
+Afisati pe labelul butonului (numele lui) de cate ori s-a dat click pe acesta.
+
+## Task 3
+
+In dreapta butonului adaugati un input-text cu placeholder Name, cu proprietatea disabled. Dupa ce se da click pe butonul cu numele Enable, inputul devine enable. In momentul in care scrii in input-text sa se afiseze in timp real mai jos textul "Greetings, (numele din input-text)!"
