@@ -6,9 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'first-angular-project';
-  pressCounter = 0
-  Counter() {
-    this.pressCounter++;
+  clickCount = 0
+  handleClick() {
+    this.clickCount++;
   }
 }
