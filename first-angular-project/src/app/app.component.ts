@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'first-angular-project';
+  pressCounter = 0
+  Counter() {
+    this.pressCounter++;
+  }
 }
