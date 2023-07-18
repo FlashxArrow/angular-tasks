@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-task-component',
@@ -6,4 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./task-component.component.css']
 })
 export class TaskComponentComponent {
+  @Input() singleTask!: string;
 }

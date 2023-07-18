@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./list-component.component.css']
 })
 export class ListComponentComponent {
-
+  tasksList: string[] = ["Buy food", "Drink Water", "Run after dog"];
 }
