@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class ListComponentComponent {
   tasksList: string[] = ["Buy food", "Drink Water", "Run after dog"];
+
+  onTaskDeleted(task: string) {
+    const index = this.tasksList.indexOf(task);
+    if (index !== -1) {
+      this.tasksList.splice(index, 1);
+    }
+  }
 }

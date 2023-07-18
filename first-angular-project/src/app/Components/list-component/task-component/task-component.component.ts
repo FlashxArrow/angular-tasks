@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-task-component',
@@ -7,4 +7,9 @@ import { Component, Input } from '@angular/core';
 })
 export class TaskComponentComponent {
   @Input() singleTask!: string;
+  @Output() taskDeleted = new EventEmitter<void>();
+
+  removeTask() {
+    this.taskDeleted.emit();
+  }
 }
