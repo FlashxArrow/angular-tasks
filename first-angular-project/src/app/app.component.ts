@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
   myLabel: string = "Show"
   isVisible: boolean = true
   names: string[] = ["Valentina", "Elisei", "Sami", "Darian"]
