@@ -1,5 +1,4 @@
 <ol [hidden]="isVisible">
-    <li *ngFor="let name of names" [ngStyle]="name === 'Darian' ? {'color': 'red', 'font-weight': 'bold'}: {'color': 'black'}
-    ">{{name}}</li>
+    <li *ngFor="let name of names" [class.my-name]="name === 'Darian'">{{name}}</li>
 </ol>
-<button (click)="showButton()"> {{ myLabel }} </button>
+<button (click)="toggleList()"> {{ myLabel }} </button>

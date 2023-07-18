@@ -8,15 +8,15 @@ import { Component } from '@angular/core';
 export class AppComponent {
   myLabel: string = "Show"
   isVisible: boolean = true
-  names: Array<string> = ["Valentina", "Elisei", "Sami", "Darian"]
-  showButton() {
+  names: string[] = ["Valentina", "Elisei", "Sami", "Darian"]
+
+  toggleList() {
+    this.isVisible = !this.isVisible
     if (this.myLabel == "Show") {
       this.myLabel = "Hide"
-      this.isVisible = !this.isVisible
     }
     else {
       this.myLabel = "Show"
-      this.isVisible = !this.isVisible
     }
   }
 
