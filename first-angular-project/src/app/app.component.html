@@ -1,3 +1,7 @@
-<button (click)="enableButton()"> Enable </button>
-<input type="text" placeholder="Name" [(ngModel)]="Username" [readOnly]="ReadOnly">
-<p> Greetings, {{ Username }}!</p>
+<ol [hidden]="isVisible">
+    <li>Valentina</li>
+    <li>Elisei</li>
+    <li>Sami</li>
+    <li>Darian</li>
+</ol>
+<button (click)="showButton()"> {{ myLabel }} </button>
