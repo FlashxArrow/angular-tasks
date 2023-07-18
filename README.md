@@ -18,3 +18,6 @@ Avem definita o lista names = ["Valentina", "Elisei", "Sami", "Darian"]. Sa se a
 
 ## Task 5
 Numele vostru sa fie afisat cu rosu si bold.
+
+## Task 6
+Creati o componenta noua numita ListComponent, apoi in interiorul ei creati o componenta TaskComponent, care afiseaza la ecran un text si un buton Delete langa (care momentan nu face nimic), cu stil danger (rosu).
