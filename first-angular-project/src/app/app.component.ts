@@ -6,9 +6,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  Username: string = ""
-  ReadOnly: boolean = true
-  enableButton() {
-    this.ReadOnly = !this.ReadOnly;
+
+  myLabel: string = "Show"
+  isVisible: boolean = true
+  names: string[] = ["Valentina", "Elisei", "Sami", "Darian"]
+
+  toggleList() {
+    this.isVisible = !this.isVisible
+    if (this.myLabel == "Show") {
+      this.myLabel = "Hide"
+    }
+    else {
+      this.myLabel = "Show"
+    }
   }
+
 }
