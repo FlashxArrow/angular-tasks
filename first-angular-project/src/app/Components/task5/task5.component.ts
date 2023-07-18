@@ -7,10 +7,10 @@ import { Component } from '@angular/core';
 })
 export class Task5Component {
   Username: string = ""
-  ReadOnly: boolean = true
+  isEnabled: boolean = true
 
   enableButton() {
-    this.ReadOnly = !this.ReadOnly;
+    this.isEnabled = !this.isEnabled;
   }
 
 }
