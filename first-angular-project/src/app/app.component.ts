@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   myLabel: string = "Show"
   isVisible: boolean = true
-
+  names: Array<string> = ["Valentina", "Elisei", "Sami", "Darian"]
   showButton() {
     if (this.myLabel == "Show") {
       this.myLabel = "Hide"

@@ -1,7 +1,5 @@
 <ol [hidden]="isVisible">
-    <li>Valentina</li>
-    <li>Elisei</li>
-    <li>Sami</li>
-    <li [ngStyle]="{'color': 'red', 'font-weight': 'bold'}">Darian</li>
+    <li *ngFor="let name of names" [ngStyle]="name === 'Darian' ? {'color': 'red', 'font-weight': 'bold'}: {'color': 'black'}
+    ">{{name}}</li>
 </ol>
 <button (click)="showButton()"> {{ myLabel }} </button>
