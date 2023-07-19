@@ -1,0 +1,2 @@
+<app-task-component *ngFor="let task of tasksList" [singleTask]="task"
+    (taskDeleted)="onTaskDeleted(task)"></app-task-component>
