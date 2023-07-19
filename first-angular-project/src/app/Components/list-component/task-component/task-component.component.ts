@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Task } from '../tasks';
 
 @Component({
   selector: 'app-task-component',
@@ -6,10 +7,10 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
   styleUrls: ['./task-component.component.css']
 })
 export class TaskComponentComponent {
-  @Input() singleTask!: string;
-  @Output() taskDeleted = new EventEmitter<void>();
+  @Input() task!: Task;
+  @Output() taskDeleted = new EventEmitter<Task>();
 
-  removeTask() {
-    this.taskDeleted.emit();
+  handleClickDelete() {
+    this.taskDeleted.emit(this.task);
   }
 }
